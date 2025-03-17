@@ -1,11 +1,13 @@
+import Payment from "./components/payment";
 
 function App() {
   return (
     <>
-        <p>
-          Edit and save to reload.
-        </p>
-
+     {/* <Payment></Payment> */}
+     <h1>                    HELLO RAHMA
+      <br></br>
+                            انا دخلت انام شويه
+     </h1>
     </>
   );
 }
