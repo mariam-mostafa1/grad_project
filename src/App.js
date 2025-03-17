@@ -1,13 +1,17 @@
 import Payment from "./components/payment";
+import PaymentForm from "./components/paymentForm";
+
 
 function App() {
   return (
     <>
-     {/* <Payment></Payment> */}
-     <h1>                    HELLO RAHMA
-      <br></br>
-                            انا دخلت انام شويه
-     </h1>
+       <h1>payment</h1>
+     <Payment></Payment>
+
+
+        <h1>paymentForm</h1> 
+     <PaymentForm></PaymentForm>
+
     </>
   );
 }
