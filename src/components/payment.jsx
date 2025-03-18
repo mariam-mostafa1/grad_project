@@ -3,7 +3,6 @@ import "../styles/payment.css";
 
 
 
-
 const Payment = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,12 +51,13 @@ const Payment = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Your Name..."
             value={formData.name}
             onChange={handleChange}
             className={errors.name ? "error" : ""}
           />
-          {errors.name && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.name && <small className="error-message">Please fill out this field</small>} */}
+
         </div>
 
         <div className="form-group">
@@ -69,7 +69,8 @@ const Payment = () => {
             onChange={handleChange}
             className={errors.email ? "error" : ""}
           />
-          {errors.email && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.email && <small className="error-message">Please fill out this field</small>} */}
+          
         </div>
 
         <div className="form-group">
@@ -81,7 +82,7 @@ const Payment = () => {
             onChange={handleChange}
             className={errors.phone ? "error" : ""}
           />
-          {errors.phone && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.phone && <small className="error-message">Please fill out this field</small>} */}
         </div>
 
         <div className="form-group">
@@ -93,7 +94,7 @@ const Payment = () => {
             onChange={handleChange}
             className={errors.address ? "error" : ""}
           />
-          {errors.address && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.address && <small className="error-message">Please fill out this field</small>} */}
         </div>
 
         <div className="form-group">
@@ -104,7 +105,7 @@ const Payment = () => {
             onChange={handleChange}
             className={errors.date ? "error" : ""}
           />
-          {errors.date && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.date && <small className="error-message">Please fill out this field</small>} */}
         </div>
 
         <div className="form-group">
@@ -116,7 +117,7 @@ const Payment = () => {
             onChange={handleChange}
             className={errors.cardNumber ? "error" : ""}
           />
-          {errors.cardNumber && <small className="error-message">Please fill out this field</small>}
+          {/* {errors.cardNumber && <small className="error-message">Please fill out this field</small>} */}
         </div>
 
         <button type="submit" className="booking-button">Booking</button>

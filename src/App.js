@@ -1,5 +1,4 @@
 import Payment from "./components/payment";
-import PaymentForm from "./components/paymentForm";
 
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
      <Payment></Payment>
 
 
-        <h1>paymentForm</h1> 
-     <PaymentForm></PaymentForm>
+
 
     </>
   );
