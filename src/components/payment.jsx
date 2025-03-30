@@ -20,6 +20,9 @@ const Payment = () => {
     if (name === "phone" && !/^\d*$/.test(value)) {
       return; // منع أي مدخل غير رقمي
     }
+    if (name === "cardNumber" && !/^\d*$/.test(value)) {
+      return; // منع أي مدخل غير رقمي
+    }
   
     setFormData({ ...formData, [name]: value });
   
@@ -63,7 +66,7 @@ const Payment = () => {
     if (!/^\d{10,11}$/.test(formData.phone)) {
       newErrors.phone = "Phone number must be 10-11 digits";
     }
-  
+    
     setErrors(newErrors);
   
     if (Object.keys(newErrors).length === 0) {
@@ -161,8 +164,6 @@ const Payment = () => {
 };
 
 export default Payment;
-
-
 
 
 
