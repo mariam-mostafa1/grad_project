@@ -4,7 +4,11 @@ import Payment from "./components/payment";
 function App() {
   return (
     <>
-       <h1>payment</h1>
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+
      <Payment></Payment>
 
 

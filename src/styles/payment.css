@@ -1,71 +1,152 @@
-
-
 .payment-container {
-    width: 350px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    position:relative;
-  }
-  
-  input {
-    width: 50%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #977902;
-    border-radius: 5px;
-    outline:none;
-    
-  }
-  
-  input::placeholder {
-    color:#333333 64%;
-  }
-  
-  input:focus {
-    border-color: #FFCC00;
-  }
-  
-  
-  .error {
-    border-color: red;
- 
-  }
-  
-  /* .error-message {
-    color: red;
-    font-size: 12px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-  } */
-  
-  .booking-button {
-    width: 50%;
-    padding: 10px;
-    background-color: #FFCC00 ;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    border: 1px solid #977902;  }
-  
-  .booking-button:hover {
-    background-color: #aa8903;
-  }
+  width: 40%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #EFFAFF;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px #333333;
+  /* box-shadow: 0px 0px 20px #333333; */
+
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #b41313;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
 
 
+input {
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+   border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px #977902, -1px -1px 2px #977902;
+  }
 
+input:focus {
+  border-color: #FFCC00;
+}
+
+.error {
+  border: 1px solid red;
+  /* background-color: #ffe6e6; */
+}
+
+.button-container {
+  grid-column: 2;
+  width: 100%;
+  align-self: end;
+  margin-top: 10px;
+}
+
+.booking-button {
+  width: 100%;
+  height: 50px;
+  background-color: #FFCC00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif; 
+  font-size: 20px;
+  font-weight: 600; 
+  color: white; 
+  -webkit-text-stroke: 0.8px black;
+  text-align: center; 
+
+  border: 1px solid #977902;
+  box-shadow: 2px 2px 4px #977902, -2px -2px 4px #977902; 
+}
+
+
+.booking-button:hover {
+  background-color: #aa8903;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .button-container {
+    grid-column: 1;
+    justify-self: center;
+  }
+}
+
+
+.error-message {
+  position: absolute; /* الرسالة تكون فوق التصميم بدون التأثير عليه */
+  color: red;
+  font-size: 12px;
+  margin-top: 0.2px;
+  /* text-align: left; */
+}
+
+
+.input-icon-name {
+  background-image: url("../../public/images/name.jpg"); /* رابط الصورة */
+  background-size: 40px 40px; /* حجم الأيقونة داخل الحقل */
+  background-repeat: no-repeat; /* عدم تكرار الصورة */
+  background-position: 10px center; /* موقع الأيقونة: يسار وفي المنتصف عموديًا */
+  padding-left: 40px; /* ترك مساحة كافية للأيقونة داخل الحقل */
+}
+.input-icon-email {
+  background-image: url("../../public/images/email.jpg"); 
+  background-size: 40px 40px; 
+  background-repeat: no-repeat; 
+  background-position: 10px center; 
+  padding-left: 40px; 
+}
+.input-icon-phone {
+  background-image: url("../../public/images/phone.jpg"); 
+  background-size: 40px 40px; 
+  background-repeat: no-repeat; 
+  background-position: 10px center; 
+  padding-left: 40px; 
+}
+.input-icon-address {
+  background-image: url("../../public/images/adress.jpg"); 
+  background-size: 40px 40px; 
+  background-repeat: no-repeat; 
+  background-position: 10px center; 
+  padding-left: 40px; 
+}
+.input-icon-date {
+  background-image: url("../../public/images/date.jpg"); 
+  background-size: 40px 40px; 
+  background-repeat: no-repeat; 
+  background-position: 10px center; 
+  padding-left: 40px; 
+}
+.input-icon-credit {
+  background-image: url("../../public/images/credit-card.jpg"); 
+  background-size: 40px 40px; 
+  background-repeat: no-repeat; 
+  background-position: 10px center; 
+  padding-left: 40px; 
+}
