@@ -15,7 +15,7 @@
 
 // export default Footer; 
 
-import { FaFacebook, FaInstagram, FaXTwitter, FaTiktok, FaTelegram, FaLinkedin, FaCakeCandles } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter, FaTiktok, FaTelegram, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -48,9 +48,9 @@ const Footer = () => {
       <div className="footer-section3">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="Payment.jsx">Home</a></li>
+          <li><a href="Payment.jsx">About Us</a></li>
+          <li><a href="Payment.jsx">Services</a></li>
         </ul>
       </div>
 
