@@ -1,10 +1,10 @@
 import Payment from "./components/payment.jsx";
 import Footer from "./components/Footer.jsx";
 import ContactUs from "./components/ContactUs.jsx";
-import Services from "./components/Services";
-import Services2 from "./components/Services2.jsx";
-import Services3 from "./components/Services3";
-
+import Services from "./components/Services.jsx";
+// import Services2 from "./components/Services2.jsx";
+// import Services3 from "./components/Services3.jsx";
+import "./App.css";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
        <br></br>
        <br></br>
        <br></br>
-{/* <Services></Services>  */}
+<Services></Services> 
        <br></br>
        <br></br>
        <br></br>
@@ -30,7 +30,7 @@ function App() {
        <br></br>
        <br></br>
        <br></br>
-       <Services3></Services3> 
+       {/* <Services3></Services3>  */}
        <br></br>
        <br></br>
        <br></br>

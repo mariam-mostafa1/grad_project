@@ -1,112 +1,108 @@
-.serv_contaiin{
- 
-  /*****/
-
-  
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  /* gap: 2% 0%; */
-  /* padding: 10px; */
-  /* padding: 10px 200px; */
-  /* padding: 10px 0px; */
-  /* padding: 0px; */
-  /* padding-left: 0%;
-  padding-right: 0%;
-  padding-top: 0%;
-  padding-bottom: 0%; */
-/* padding: 12%; */
-/* padding-left: 14%; */
-  /* padding-top: 0.2%;
-  padding-bottom: 0.2%; */
-
+.serv_contaiinn{
+  width: 95%;
   display: flex;
-  justify-content: center; /* توسيط أفقياً */
+  flex-direction: column;
   align-items: center;    /* توسيط عمودياً */
-  height: 90vh;          /* يملا الشاشة عمودياً */
-
-
-  background-color: blue;
-
+  /* background-color: blue; */
+  padding: 6vh 2vw;  /***YEEEEES***/ /* 6vh من الأعلى والأسفل و2vw من اليمين واليسار */
 }
 
-.services_containeer {
-  /* display: grid;
-  align-content: center;
- 
-   place-content: center; */
-  
-  /* grid-template-columns: 1fr 1fr; */
-   /* عمودين */
+.services_containeeer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* عمودين */
-  gap: 1%;
-  justify-content:center;
-  place-content: center;
-  /* gap: 10px 40px; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /***YEEEEES***/
+  gap:20px 50px ; /***YEEEEES***/
 
 
- padding: 10%; 
- 
- 
-  /* padding: 10px 200px; */
-  /* width: 70%; */
-background-color: #c91515;
-width: 140vh; /* أو العرض اللي تختاره */
-height: 70vh; /* أو الارتفاع اللي تختاره */
-
-/*overflow:scroll; /* يسمح بالتمرير في حالة تجاوز المحتوى */
- /*overflow:hidden; /* يمنع التمرير */
-/* overflow:auto;*/   /* يظهر شريط التمرير فقط عند الحاجة */
-
-
-position:relative; /* يسمح بالتحكم داخل البرواز بالنسبة للعناصر بداخله */
+/* background-color: #c91515; */
+width: 100%; /* أو العرض اللي تختاره */ /***YEEEEES***/
+max-width: 1200px; /* أقصى عرض */ /***YEEEEES***/
+padding: 2vh; /***YEEEEES***/
 box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
-/* position:absolute;  */
-
 }
 
+.service-caard:hover
+ { transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor:pointer;
+  box-shadow: 0px 8px 16px rgb(100, 135, 199); 
 
-
-
-.service-card:hover
- { transform: scale(1.02); }
-.service-card {
+}
+ 
+.service-caard {
   display: flex;
-  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  color: #c91515;
+  color: #53d7ff;
+  font-size: 1.2vh;
   align-items: center;
-  width: 500px;
-  height: 100px;
-  box-shadow: 0px 3px 8px black;
+  padding: 1vh; /***YEEEEES***/
+  box-shadow: 0px 8px 16px rgb(23, 51, 102);
+  background-color: rgb(8, 3, 77);
+  transition: transform 0.3s ease; /***YEEEEES***/
+
 }
 
-.service-card-image {
-  width: 70px;
-  height: auto;
-  margin-right: 20px;
+.service-caard-image {
+  width: 80px; /***YEEEEES***/
+  height: 110px; /***YEEEEES***/
+  margin-right: 1vh;
+
+  border-radius: 10px; /***YEEEEES***/
+  object-fit:fill; /***YEEEEES***/
+padding-top: 1vh;
+
 }
 
-.service-card-content {
+.service-caard-content {
   flex: 1;
 
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /***NOOO***/
+  gap: 20px; /***YEEEEES***/
 }
-.service-card-title{
-  color: blueviolet;
+.service-caard-title{
+  color:burlywood;
+  font-size: 3vh;
+  font-weight: bold; /***YEEEEES***/
+  padding-top: 2vh;
 }
 
-.service-select {
+/* .service-seelect {
   margin-top: 0px;
   padding: 5px;
+background-color: #FFCC00;
+} */
+
+.custom-select {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #b30101; */
+  /* height: 20vh ; */
+
+}
+
+.custom-option {
+  display: flex;
+  align-items: center;
+  font-size: 1.5vh; /***YEEEEES***/
+  padding: 0.35vh;
+  /* gap: 5px; */
+}
+
+.custom-option input {
+  margin-right: 5px;
+ 
+
+  
+  
 }
 
 .price{
   color: #FFCC00;
+  font-weight: bold; /***YEEEEES***/
+  /* padding: 10px; */
 }
 /* 
 .quantity-selector {
@@ -137,20 +133,21 @@ box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
 .quantity-selector {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  /*justify-content: center; /***NOOO***/
+  gap: 10px; /***YEEEEES***/
+
 }
 
-/* .quantity-selector-button {
+.quantity-selector {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-} */
-
-/* .quantity-btn {
+color: #e400ab;
+/* background-color: #FFCC00; */
+margin-bottom: 3vh;
+}
+/* 
+.quantity-btn {
   background-color: #007BFF;
   color: white;
   border: none;
@@ -161,13 +158,25 @@ box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
 } */
 
 
-.quantity-btndecrement:hover {
+/***NOOO***/ /***NOOO***/  /***NOOO***/
+/* .quantity-btndecrement:hover {
   background-color: #0056b3;
 }
 
 .quantity-btnincrement:hover {
   background-color: #0056b3;
+} */
+/***NOOO***/  /***NOOO***/ /***NOOO***/
+
+
+/***YEEEEES***/  /***YEEEEES***/ /***YEEEEES***/
+.quantity-btndecrement:hover,
+.quantity-btnincrement:hover {
+  background-color: #041157;
+  color: white;
 }
+/***YEEEEES***/  /***YEEEEES***/ /***YEEEEES***/
+
 
 .quantity-number {
   font-size: 18px;
@@ -176,25 +185,80 @@ box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
 
 
 
-@media (max-width: 988px) {
- 
- 
-  .services_containeer {
-    grid-template-columns: 1fr; /* عمود واحد */
-    gap: 1%; /* المسافة بين العناصر */
-   
-    justify-self: center;
-  }
-  
-  .services_containeer {
-  
-    height: 94vh; /* أو الارتفاع اللي تختاره */
-    width: 70vh; /* أو العرض اللي تختاره */
-  }
-  .serv_contaiin{
-    height: 100vh; /* أو الارتفاع اللي تختاره */
-    width: 100vh; /* أو العرض اللي تختاره */
-  }
+
+
+
+.slider-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;/***NOOO***/
+  width: 100%;
+  max-width: 1200px; /***YEEEEES***/
+  padding: 0 2vw; /***YEEEEES***/
+}
+
+.slider-buttons button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.8vh;
+  font-weight: bold;
+}
+
+.slider-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 
+/***NOOO***//***NOOO***//***NOOO***/
+/* .slider-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10%;
+} */
+/***NOOO***//***NOOO***//***NOOO***/
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services_containeeer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+
+
+.service-caard:hover
+ { transform: scale(1.02); }
+ 
+  .service-caard {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .service-caard-image {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .slider-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+/* body{
+  overflow-x: hidden;
+} */
