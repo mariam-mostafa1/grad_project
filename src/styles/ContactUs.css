@@ -1,0 +1,123 @@
+/* خلفية الصفحة */
+.container {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+  }
+  
+  /* البرواز */
+  .frame {
+    border: 1px solid #FFCC00;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* العنوان */
+  .title {
+    color: #333333;
+    text-align: center;
+  }
+  
+  /* الخط */
+  .divider {
+    border: none;
+    border-top: 1px solid #FFCC00;
+    margin: 10px 0;
+  }
+  
+  /* الكروت */
+  .card {
+    margin: 10px 0;
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+   
+
+  }
+  .cardName {
+color: rgb(26, 53, 53);
+font-size: small;
+height: 28vh;
+width: 70%;
+
+  }
+  .cardNameFirst {
+    display: flex;
+    gap: 5px;
+      }
+
+      .cardNameSecond {
+        display: flex;
+        gap: 5px;
+          }
+
+  .cardEmail {
+   width: 80%;
+   /* display: flex; */
+text-align: left; 
+height: 15vh;
+ }
+.cardEmailInput {
+    display: block;
+    margin: auto;
+    
+ 
+ }
+  
+  /* مدخلات النص */
+  .input {
+    display: block;
+    margin: 0px 0;
+    /* padding: 20px; */
+    width: 80%;
+    height: 44px;
+    box-sizing: border-box;
+  }
+  
+  /* قسم الرسالة */
+  .message-section {
+    margin: 15px 0;
+  }
+  
+  /* مدخلات الرسالة */
+  .message-input {
+    display: block;
+    width: 80%;
+    height: 70px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  
+  /* زر الإرسال */
+  .submit-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FFCC00;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* جعل التصميم responsive */
+  @media (max-width: 768px) {
+    .frame {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .frame {
+      width: 50%;
+    }
+  }
