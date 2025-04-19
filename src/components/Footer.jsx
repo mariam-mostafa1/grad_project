@@ -35,7 +35,9 @@ const Footer = () => {
 
       {/* قسم معلومات التواصل */}
       <div className="footer-section2">
-        <h3>Contact Information</h3>
+        <h3 className="hover-target">Contact Information</h3>
+  <span className="hover-text">you can phone us by "phone" OR send message on WhatsApp  OR send us an E-mail</span>
+
         <div className="footer-section22">
         <p>📞 Phone: 0123456789</p>
         <p>📱 WhatsApp: 0123456789</p>
