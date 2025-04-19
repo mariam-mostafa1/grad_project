@@ -76,11 +76,13 @@ const Payment = () => {
   /************************************************************************** */
 
   return (
-    <div className="payment-container">
+    <div className="payment-containn">
       <h2>Payment Form</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-grid">
-          <div className="form-group">
+        <div className="fo0rm-griid">
+          <div className="fo0rm_group">
+         
+          
             <input
               type="text"
               name="name"
@@ -88,12 +90,13 @@ const Payment = () => {
               value={formData.name}
               onChange={handleChange}
               // className={errors.name ? "error" : ""}
-              className={errors.name ? "error input-icon" : "input-icon-name"}
-
+              className={errors.name ? "error input-icon" : "input-icon-name inp0t"}
             />
+        
+
             {errors.name && <p className="error-message">{errors.name}</p>}
           </div>
-          <div className="form-group">
+          <div className="fo0rm_group">
             <input
               type="email"
               name="email"
@@ -101,58 +104,58 @@ const Payment = () => {
               value={formData.email}
               onChange={handleChange}
               // className={errors.email ? "error" : ""}
-              className={errors.email ? "error input-icon" : "input-icon-email"}
+              className={errors.email ? "error input-icon" : "input-icon-email inp0t"}
 
             />
             {errors.email && <p className="error-message">{errors.email}</p>}
           </div>
           {/* <div className="form-group" style={{ position: "relative" }}> */}
-          <div className="form-group">
+          <div className="fo0rm_group">
             <input
               type="tel"
               name="phone"
               placeholder="Phone"
               value={formData.phone}
               onChange={handleChange}
-              className={errors.phone ? "error input-icon" : "input-icon-phone"}
+              className={errors.phone ? "error input-icon" : "input-icon-phone inp0t"}
             />
              {errors.phone && <p className="error-message">{errors.phone}</p>}
 
           </div>
-          <div className="form-group">
+          <div className="fo0rm_group">
             <input
               type="text"
               name="address"
               placeholder="Address"
               value={formData.address}
               onChange={handleChange}
-              className={errors.address ? "error input-icon" : "input-icon-address"}
+              className={errors.address ? "error input-icon" : "input-icon-address inp0t"}
             />
             {errors.address && <p className="error-message">{errors.address}</p>}
           </div>
-          <div className="form-group">
+          <div className="fo0rm_group">
             <input
               type="datetime-local"
               name="date"
               value={formData.date}
               onChange={handleChange}
-              className={errors.date ? "error input-icon" : "input-icon-date"}
+              className={errors.date ? "error input-icon" : "input-icon-date inp0t"}
             />
             {errors.date && <p className="error-message">{errors.date}</p>}
           </div>
-          <div className="form-group">
+          <div className="fo0rm_group">
             <input
               type="text"
               name="cardNumber"
               placeholder="Credit Card Number"
               value={formData.cardNumber}
               onChange={handleChange}
-              className={errors.cardNumber ? "error input-icon" : "input-icon-credit"}
+              className={errors.cardNumber ? "error input-icon" : "input-icon-credit inp0t"}
             />
             {errors.cardNumber && <p className="error-message">{errors.cardNumber}</p>}
           </div>
           {/* زر الحجز موضوع في الصف الرابع بالعمود الثاني */}
-          <div className="button-container">
+          <div className="bottun-containn">
             <button type="submit" className="booking-button">
               Booking
             </button>

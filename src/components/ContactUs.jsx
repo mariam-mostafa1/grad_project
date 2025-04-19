@@ -3,35 +3,42 @@ import '../styles/ContactUs.css';
 
 const ContactUs = () => {
   return (
-    <div className="container">
-      <div className="frame">
-        <h1 className="title">Contact Us</h1>
-        <hr className="divider" />
-        <div className="card">
+    <div className="contact_contain">
+      <div className="contact_fraame">
+        <h1 className="tit_contact_us">Contact Us</h1>
+        <hr className="cont_diviider" />
+        <div className="cardd">
+
           {/* <p>Full Name</p> */}
+        <div className="cardNameContainn">
           <div className="cardName">
           <p>First Name</p>
-          <div className="cardNameFirst">
-          <input type="text" placeholder="" className="input" />
+          <input name='name' type="text" placeholder="" className="input" />
           </div>
+
+          <div className="cardName">
           <p>Second Name</p>
-          <div className="cardNameSecond">
-          <input type="text" placeholder="" className="input" />
-        </div> </div></div>
-        <div className="card">
-          <p>E-mail</p>
+          <input name='name' type="text" placeholder="" className="input" />
+        
+        </div> </div> </div>
+        <div className="cardd">
+          <p className='email'>E-mail</p>
+          <div className="cardEmail-centEer">
+
           <div className="cardEmail">
-          <div className="cardEmailInput">
-          <input type="email" placeholder="type your E-mail" className="input" />
+          <div className="cardEmailInpot">
+          <input name='email' type="email" placeholder="type your E-mail" className="input" />
           </div>
           <p><h6>example@gmail.com</h6></p>
-        </div> </div>
-        <div className="message-section">
+        </div> </div> </div>
+        <div className="message-secc">
           <p>Message</p>
-          <textarea placeholder="Type your message here..." className="message-input"></textarea>
+          <textarea placeholder="Type your message here..." className="message-inpvt"></textarea>
         </div>
-        <button className="submit-button">Submit</button>
       </div>
+
+      <button className="sapmit-but">Submit</button>
+
     </div>
   );
 };

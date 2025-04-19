@@ -1,0 +1,200 @@
+.serv_contaiin{
+ 
+  /*****/
+
+  
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  /* gap: 2% 0%; */
+  /* padding: 10px; */
+  /* padding: 10px 200px; */
+  /* padding: 10px 0px; */
+  /* padding: 0px; */
+  /* padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%; */
+/* padding: 12%; */
+/* padding-left: 14%; */
+  /* padding-top: 0.2%;
+  padding-bottom: 0.2%; */
+
+  display: flex;
+  justify-content: center; /* توسيط أفقياً */
+  align-items: center;    /* توسيط عمودياً */
+  height: 90vh;          /* يملا الشاشة عمودياً */
+
+
+  background-color: blue;
+
+}
+
+.services_containeer {
+  /* display: grid;
+  align-content: center;
+ 
+   place-content: center; */
+  
+  /* grid-template-columns: 1fr 1fr; */
+   /* عمودين */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* عمودين */
+  gap: 1%;
+  justify-content:center;
+  place-content: center;
+  /* gap: 10px 40px; */
+
+
+ padding: 10%; 
+ 
+ 
+  /* padding: 10px 200px; */
+  /* width: 70%; */
+background-color: #c91515;
+width: 140vh; /* أو العرض اللي تختاره */
+height: 70vh; /* أو الارتفاع اللي تختاره */
+
+/*overflow:scroll; /* يسمح بالتمرير في حالة تجاوز المحتوى */
+ /*overflow:hidden; /* يمنع التمرير */
+/* overflow:auto;*/   /* يظهر شريط التمرير فقط عند الحاجة */
+
+
+position:relative; /* يسمح بالتحكم داخل البرواز بالنسبة للعناصر بداخله */
+box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
+/* position:absolute;  */
+
+}
+
+
+
+
+.service-card:hover
+ { transform: scale(1.02); }
+.service-card {
+  display: flex;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #c91515;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  box-shadow: 0px 3px 8px black;
+}
+
+.service-card-image {
+  width: 70px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.service-card-content {
+  flex: 1;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service-card-title{
+  color: blueviolet;
+}
+
+.service-select {
+  margin-top: 0px;
+  padding: 5px;
+}
+
+.price{
+  color: #FFCC00;
+}
+/* 
+.quantity-selector {
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  padding-left: 300px;
+
+  order: -1;
+  margin-bottom: -50px;
+  padding-top: 15px;
+}
+
+.quantity-selector button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+  
+} 
+/* 
+.quantity-selector span {
+  font-weight: bold;
+} */
+
+
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* .quantity-selector-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+} */
+
+/* .quantity-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+
+.quantity-btndecrement:hover {
+  background-color: #0056b3;
+}
+
+.quantity-btnincrement:hover {
+  background-color: #0056b3;
+}
+
+.quantity-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 988px) {
+ 
+ 
+  .services_containeer {
+    grid-template-columns: 1fr; /* عمود واحد */
+    gap: 1%; /* المسافة بين العناصر */
+   
+    justify-self: center;
+  }
+  
+  .services_containeer {
+  
+    height: 94vh; /* أو الارتفاع اللي تختاره */
+    width: 70vh; /* أو العرض اللي تختاره */
+  }
+  .serv_contaiin{
+    height: 100vh; /* أو الارتفاع اللي تختاره */
+    width: 100vh; /* أو العرض اللي تختاره */
+  }
+}
+
+
