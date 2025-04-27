@@ -77,7 +77,7 @@ const Payment = () => {
 
   return (
     <div className="payment-containn">
-      <h2>Payment Form</h2>
+      {/* <h2>Payment Form</h2> */}
       <form onSubmit={handleSubmit}>
         <div className="fo0rm-griid">
           <div className="fo0rm_group">
