@@ -29,8 +29,9 @@ const ContactUs = () => {
           <div className="cardEmailInpot">
           <input name='email' type="email" placeholder="type your E-mail" className="input" />
           </div>
-          <p><h6>example@gmail.com</h6></p>
-        </div> </div> </div>
+          <div className="cardEmailexample">
+         <h6>example@gmail.com</h6>
+        </div> </div></div> </div>
         <div className="message-secc">
           <p>Message</p>
           <textarea placeholder="Type your message here..." className="message-inpvt"></textarea>
