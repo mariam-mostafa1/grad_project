@@ -1,3 +1,6 @@
+import Navbar from "./components/Navbar.jsx";
+import Home from "./components/Home.jsx";
+import AboutUs from "./components/AboutUs.jsx";
 import Payment from "./components/payment.jsx";
 import Footer from "./components/Footer.jsx";
 import ContactUs from "./components/ContactUs.jsx";
@@ -13,6 +16,9 @@ function App() {
     <>
   
     
+<Navbar></Navbar> 
+<Home></Home> 
+<AboutUs></AboutUs> 
 <Services></Services> 
 <Services2></Services2>    
 <Payment></Payment>
