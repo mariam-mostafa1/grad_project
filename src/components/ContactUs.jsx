@@ -3,6 +3,7 @@ import '../styles/ContactUs.css';
 
 const ContactUs = () => {
   return (
+    <section id="ContactUs">
     <div className="contact_contain">
       <div className="contact_fraame">
         <h1 className="tit_contact_us">Contact Us</h1>
@@ -41,6 +42,7 @@ const ContactUs = () => {
       <button className="sapmit-but">Submit</button>
 
     </div>
+    </section>
   );
 };
 

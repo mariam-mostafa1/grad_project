@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import '../styles/home.css';
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import img1 from "../images/img1.jpg";
 import Aos from 'aos';
@@ -12,7 +13,7 @@ const Home = () => {
   }, [])
 
   return (
-    <section className="home">
+    <section id= "Home" className="home">
       <div className="overlay"></div>
       <img src="/images/img1.jpg" className="img1" alt="Background" />
       <div className="homeContent container">
@@ -39,18 +40,14 @@ const Home = () => {
           {/* <Link to="/Services" className='startButton'>Get Started</Link> */}
 
           <h2>Join To Our Community!</h2>
-          {/* <Link to="/SignUp" className="signupButton">
+          <Link to="/signup" className="signupButton">
             Sign Up
-          </Link> */}
-          <a href="a" className="signupButton">
-            Sign Up
-          </a>
-          {/* <Link to="/SignIn" className="signinButton">
+          </Link>
+          
+          <Link to="/signin" className="signinButton">
             Sign In
-          </Link> */}
-          <a href="a" className="signinButton">
-            Sign In
-          </a>
+          </Link>
+          
         </div>
       </div>
     </section>

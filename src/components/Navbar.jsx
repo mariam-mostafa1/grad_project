@@ -31,19 +31,19 @@ const Navbar = () => {
             <div className={active}>
                 <ul className='navLists flex'>
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Home</a>
+                        <a href='#Home' className='navLink'>Home</a>
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>About Us</a>
+                        <a href='#AboutUs' className='navLink'>About Us</a>
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Feedback</a>
+                        <a href='#Feedback' className='navLink'>Feedback</a>
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>How Works</a>
+                        <a href='#HowWorks' className='navLink'>How Works</a>
                     </li>
 
                     <li className='navItem'>
@@ -51,11 +51,11 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Asked Questions</a>
+                        <a href='#Questions' className='navLink'>Asked Questions</a>
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Contact Us</a>
+                        <a href='#ContactUs' className='navLink'>Contact Us</a>
                     </li>
 
                     <li className='navItem'>

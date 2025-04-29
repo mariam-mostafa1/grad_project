@@ -32,6 +32,7 @@ const Questions = () => {
   };
 
   return (
+    <section id="Questions">
     <div className="questions-container">
       <h2>الأسئلة الشائعة</h2>
       <ul>
@@ -51,6 +52,7 @@ const Questions = () => {
         {showMore ? 'See Less' : 'See More'}
       </button>
     </div>
+    </section>
   );
 };
 

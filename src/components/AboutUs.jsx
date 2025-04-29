@@ -11,7 +11,7 @@ const AboutUs = () => {
     }, [])
     
     return (
-        <section className="aboutUs">
+        <section id="AboutUs"  className="aboutUs">
           <div data-aos="fade-up" className="container">
             <h2 className="sectionTitle">About Us</h2>
             <p>
