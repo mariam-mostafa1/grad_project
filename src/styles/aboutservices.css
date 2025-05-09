@@ -1,0 +1,153 @@
+@media screen and (max-width: 1050px) {
+
+.services {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+  
+    .title {
+      font-size: 30px;
+      text-align: center;
+      font-family: system-ui, Roboto ;
+      /* font-weight: bold; */
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #333;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+  
+    .services-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+  
+    .service-card {
+      background-color: #eaf7ff;
+    /*    font-family: system-ui, Roboto ; */
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      height: 180px;
+      max-width: 400px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      display: block;
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+  
+      .icon {
+        font-size: 60px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 18px;
+        font-family: system-ui, Roboto;
+        margin : -100px 0 0 80px ;
+        /* flex-direction: column;
+        font-weight: bold; */
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 14px;
+        margin : 1px 0 0 80px ;
+        color: #555;
+        font-family: system-ui, Roboto ;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 1050px) {
+
+  .services {
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    /* width: 100%; */
+    background-color: #ffffff;
+  
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-family: system-ui, Roboto ;
+      /* font-weight: bold; */
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #333;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+  
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; 
+      align-items: flex-start;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+  
+    .service-card {
+      background-color: #eaf7ff;
+    /*    font-family: system-ui, Roboto ; */
+      border-radius: 12px;
+      padding: 20px;
+      width: 370px;
+      height: 180px;
+      max-width: 400px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      display: block;
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+  
+      .icon {
+        font-size: 60px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 18px;
+        font-family: system-ui, Roboto;
+        margin : -100px 0 0 80px ;
+        /* flex-direction: column;
+        font-weight: bold; */
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 14px;
+        margin : 1px 0 0 80px ;
+        color: #555;
+        font-family: system-ui, Roboto ;
+      }
+    }
+  }
+
+}

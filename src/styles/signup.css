@@ -1,0 +1,185 @@
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.signup{
+  animation: slideInFromRight 0.5s ease forwards;
+  display: flex;
+  height: 100vh;
+  /* font-family: 'Roboto Slab'; */
+
+  .signup__left {
+    flex: 1;
+    background-size: cover;
+    border-radius: 0px 50px 50px 0px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    filter: blur(5px); */
+    background-position: center;
+    position: relative;
+    display: flex;
+    /* text-align: left; */
+    align-items: center;
+    justify-content: center;
+
+    .signup__overlay{
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      padding: 2rem;
+      color: #fff;
+      text-align: center;
+      border-radius: 1.5rem;
+
+      h2 {
+        font-size: 30px;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 20rem;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+      }
+
+      p {
+        /* text-align: left; */
+        margin-bottom: 0.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        /* margin-bottom: 1rem; */
+      }
+
+      .signin__link {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+        padding-bottom: 2px;
+        /* text-align: left;
+        margin-bottom: -20px; */
+      }
+    }
+  }
+
+  .signup__right {
+    flex: 1;
+    background: #ffffff;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .signup__title {
+      font-size: 30px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .signup__form {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 50px;
+
+      input {
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        border: 2px solid #d7e2ef;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        /* border: 1px solid #ccc; */
+        background-color: #e9f4fc;
+        outline: none;
+        transition: border 0.3s;
+  
+        &:focus {
+           border-color: #899eba;
+                  }
+      }
+    }
+
+    .signup__checkbox {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #8F9699;
+      margin: -8px 0px 15px 10px;
+      /* margin-left: 10px; */
+      font-size: 13px;
+    }
+
+    .signup__btn {
+      margin-top: 1rem;
+      font-size: 20px;
+      padding: 12px;
+      background-color: #a2c5f5;
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      cursor: pointer;
+      transition: 0.3s;
+  
+      &:hover {
+        background: #f3f9ff;  
+            }
+    }
+
+    .signup__or {
+      font-size: 18px;
+      text-align: center;
+      margin: 20px 0;
+      color: #777;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .signup__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      cursor: pointer;
+      margin: 0px 110px;
+      /* margin-bottom: 1rem; */
+
+      &.google {
+        background: #F1F1F1;
+        border: none;
+        font-size: 18px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+        .g-icon {
+          font-size: 25px;
+          /* color: #ea4335; */
+        }
+      }
+
+      &.facebook {
+        background: #1877f2;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        color: white;
+
+        .fb-icon {
+          font-size: 25px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

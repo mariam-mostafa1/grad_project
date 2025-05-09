@@ -1,0 +1,358 @@
+@media screen and (max-width: 1050px) {
+
+  .feedback-container {
+      max-width: 500px;
+      margin: 0px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .feedback-title {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Road Rage";
+      letter-spacing: 1px;
+      color: #2C3E50;
+      margin-bottom: 20px;
+    }
+    
+    .feedback-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .feedback-list {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      /* scroll-behavior: smooth;
+      scrollbar-width: none; // Hide scrollbar for Firefox */
+      -ms-overflow-style: none; 
+      width: 100%;
+      padding: 10px 0;
+    
+      &::-webkit-scrollbar {
+        display: none; 
+      }
+    }
+    
+    .feedback-item {
+      flex: 0 0 auto;
+      width: 250px;
+      height: 120px;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+  
+      &:hover {
+          background-color:rgba(241, 241, 241, 0.2);
+          transform: scale(0.9);
+              }
+    }
+    
+    .feedback-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #dcdcdc;
+      margin-bottom: 10px;
+    }
+    
+    .feedback-content {
+      display: flex;
+      margin-top: -70px;
+      flex-direction: column;
+      padding: 0 70px;
+      /* width: 100px; */
+    }
+    
+    .feedback-name {
+      font-weight: bold;
+      color: #000000;
+      font-family: roboto;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .feedback-text {
+      font-size: 14px;
+      padding-top: 3px;
+      color: #333333;
+      font-family: roboto;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .arrow {
+      background: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      color: #2C3E50;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      z-index: 10;
+    
+      &:hover {
+        color: #90abcd;
+      }
+    }
+    
+    .left {
+      left: -40px;
+    }
+    
+    .right {
+      right: -40px;
+    }
+    
+    .feedback-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .feedback-label {
+      font-size: 1rem;
+      font-family: roboto;
+      font-weight: bold;
+      color: #000000;
+    }
+    
+    .feedback-input {
+      width: 70%;
+      height: 50px;
+      padding: 10px;
+      font-size: 15px;
+      font-family: roboto;
+      border: 2px solid #d7e2ef;
+      border-radius: 8px;
+      background: #EFFAFF;
+      outline: none;
+      transition: border 0.3s;
+    
+      &:focus {
+        border-color: #899eba;
+      }
+  
+    }
+    
+    .feedback-button {
+      background: #9DB6D6;
+      color: white;
+      font-family: system-ui, roboto ;
+      /* font-weight: 10px; */
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      margin-bottom: 30px;
+      /* width: 50%;
+      align-content: center; */
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    
+      &:hover {
+        background: #d7e2ef;
+        color: #2C3E50;
+      }
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 1050px) {
+  
+    .feedback-container {
+      max-width: 500px;
+      margin: 0px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .feedback-title {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Road Rage";
+      letter-spacing: 1px;
+      color: #2C3E50;
+      margin-bottom: 20px;
+    }
+    
+    .feedback-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .feedback-list {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      /* scroll-behavior: smooth;
+      scrollbar-width: none; // Hide scrollbar for Firefox */
+      -ms-overflow-style: none; 
+      width: 100%;
+      padding: 10px 0;
+    
+      &::-webkit-scrollbar {
+        display: none; 
+      }
+    }
+    
+    .feedback-item {
+      flex: 0 0 auto;
+      width: 250px;
+      height: 120px;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+  
+      &:hover {
+          background-color:rgba(241, 241, 241, 0.2);
+          transform: scale(0.9);
+              }
+    }
+    
+    .feedback-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #dcdcdc;
+      margin-bottom: 10px;
+    }
+    
+    .feedback-content {
+      display: flex;
+      margin-top: -70px;
+      flex-direction: column;
+      padding: 0 70px;
+      /* width: 100px; */
+    }
+    
+    .feedback-name {
+      font-weight: bold;
+      color: #000000;
+      font-family: roboto;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .feedback-text {
+      font-size: 14px;
+      padding-top: 3px;
+      color: #333333;
+      font-family: roboto;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .arrow {
+      background: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      color: #2C3E50;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      z-index: 10;
+    
+      &:hover {
+        color: #90abcd;
+      }
+    }
+    
+    .left {
+      left: -40px;
+    }
+    
+    .right {
+      right: -40px;
+    }
+    
+    .feedback-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .feedback-label {
+      font-size: 1rem;
+      font-family: roboto;
+      font-weight: bold;
+      color: #000000;
+    }
+    
+    .feedback-input {
+      width: 70%;
+      height: 50px;
+      padding: 10px;
+      font-size: 15px;
+      font-family: roboto;
+      border: 2px solid #d7e2ef;
+      border-radius: 8px;
+      background: #EFFAFF;
+      outline: none;
+      transition: border 0.3s;
+    
+      &:focus {
+        border-color: #899eba;
+      }
+  
+    }
+    
+    .feedback-button {
+      background: #9DB6D6;
+      color: white;
+      font-family: system-ui, roboto ;
+      /* font-weight: 10px; */
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      margin-bottom: 30px;
+      /* width: 50%;
+      align-content: center; */
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    
+      &:hover {
+        background: #d7e2ef;
+        color: #2C3E50;
+      }
+    }
+  
+  }
+
