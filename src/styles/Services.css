@@ -5,23 +5,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;    /* توسيط عمودياً */
-  /* background-color: blue; */
+  align-items: center;   
   background-color: #EFFAFF;
-  padding: 6vh 2vh;   /* 6vh من الأعلى والأسفل و2vw من اليمين واليسار */
+  padding: 6vh 2vh;   
 }
 
 .services_containeeer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap:20px 50px ; 
-
-
-/* background-color: #c91515; */
-width: 100%; /* أو العرض اللي تختاره */ 
-max-width: 1200px; /* أقصى عرض */ 
+width: 100%;  
+max-width: 1200px;
 padding: 2vh; 
-box-sizing: border-box; /* يجعل الأبعاد تشمل الحدود */
+box-sizing: border-box; 
 }
 
 .service-caard:hover
@@ -75,87 +71,19 @@ padding-top: 1vh;
   padding-top: 6vh;
 }
 
-/* .service-seelect {
-  margin-top: 0px;
-  padding: 5px;
-background-color: #FFCC00;
-} */
-
-
-
 .price{
   color: #FFCC00;
   font-weight: bolder; 
-  /* padding: 10px; */
   font-size: 2vh;
   text-shadow: #000 0px 0px 6px;
 }
-/* 
-.quantity-selector {
-  display: flex;
-  align-items:center;
-  gap: 10px;
-  padding-left: 300px;
-
-  order: -1;
-  margin-bottom: -50px;
-  padding-top: 15px;
-}
-
-.quantity-selector button {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  background-color: #eee;
-  cursor: pointer;
-  
-} 
-/* 
-.quantity-selector span {
-  font-weight: bold;
-} */
-
-
 
 .quantity-selector {
   display: flex;
   align-items: center;
-  /*justify-content: center; 
-  gap: 10px; 
-
-}
-
-.quantity-selector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-color: #333333;
-/* background-color: #FFCC00; */
 margin-bottom: 3vh;
 }
-/* 
-.quantity-btn {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-} */
 
-
-   
-/* .quantity-btndecrement:hover {
-  background-color: #0056b3;
-}
-
-.quantity-btnincrement:hover {
-  background-color: #0056b3;
-} */
-   
-
-
-   
 .quantity-btndecrement:hover,
 .quantity-btnincrement:hover {
   background-color: #9DB6D6;
@@ -180,11 +108,6 @@ border-radius: 30%;
   font-weight: bold;
 }
 
-
-
-
-
-
 .slider-buttons {
   margin-top: 40px;
   display: flex;
@@ -208,18 +131,14 @@ border-radius: 30%;
   white-space: nowrap;
   box-shadow: 2px 4px 6px rgba(163, 112, 10, 0.6);
   z-index: 10;
-
 }
 
 .slider-buttons button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-
 }
 
 .slider-buttons button:hover:not(:disabled) {
-  /* background-color: #ff1e00; */
-  /* color: white; */
   box-shadow: 2px 4px 6px rgba(163, 112, 10, 0.6);
   padding: 10px 20px;
   border-radius: 5px;
@@ -230,30 +149,6 @@ border-radius: 30%;
   transform: scale(1.09);
 }
 
-/* .slider-buttons button:not(:disabled) {
-  background-color: #ff1e00;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: help;
-  font-size: 1.8vh;
-} */
-
-
-/* .slider-buttons {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0 10%;
-} */
-
-
-
-
-
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .services_containeeer {
     grid-template-columns: 1fr;
@@ -286,29 +181,6 @@ border-radius: 30%;
   }
 }
 
-/* body{
-  overflow-x: hidden;
-} */
-
-
-/* .clothes-text {
-  font-family: 'Rubik Doodle Shadow', cursive;
-  font-size: 64px;
-  color: #000;
-  text-shadow: 3px 3px 0 #aaa;
-} */
-
-/* .clothes-text {
-  font-family: 'Rubik Doodle Shadow', cursive;
-  font-size: 64px;
-  color: #333;
-  text-shadow:
-    2px 2px 0 #fff,
-    4px 4px 0 #ccc;
-} */
-
-
-
 .clothes-text {
   font-family: 'Rubik Doodle Shadow', cursive;
   font-size: 64px;
@@ -320,15 +192,13 @@ border-radius: 30%;
 }
 
 
-
-/* إضافة نمط الـ Popup */
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* خلفية مظللة */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,10 +252,6 @@ border-radius: 30%;
   font-weight: bold;
 }
 
-
-
-
-
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -422,7 +288,6 @@ border-radius: 30%;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-
   padding: 10px;
   border: none;
   border-radius: 5px;

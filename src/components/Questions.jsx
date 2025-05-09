@@ -34,7 +34,7 @@ const Questions = () => {
   return (
     <section id="Questions">
     <div className="questions-container">
-      <h2>الأسئلة الشائعة</h2>
+      <div className="head_ques">Common Questions</div>
       <ul>
         {visibleQuestions.map((item, index) => (
           <li key={index} className="question-item">

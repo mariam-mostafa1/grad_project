@@ -16,6 +16,7 @@ import SignUp from "./components/SignUp.jsx";
 import SignIn from "./components/SignIn.jsx";
 // import Services3 from "./components/Services3.jsx";
 import "./App.css";
+import Questions from "./components/Questions.jsx";
 
 
 function App() {
@@ -25,31 +26,24 @@ function App() {
 
   return (
     <>
-      {!hideNavbar && <Navbar />}
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-               <Navbar/> 
-               <Home/>
-               <AboutUs/> 
-               <Feedback/>
-               <HowWorks/>
-               <AboutServices/> 
-               <Questions/>
-               <ContactUs/>
-               <Footer/>
-               <Services/>
-               <Services2/>
-               <Payment/>
-            </>
-          }
-        />
-        
-         <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-      </Routes>
+  
+    
+<Services></Services> 
+<Services2></Services2>    
+<Payment></Payment>
+
+  
+<ContactUs></ContactUs>
+ 
+<Questions></Questions>
+     
+     <Footer></Footer>
+
+
+     
+     
+
+
     </>
   );
 }
