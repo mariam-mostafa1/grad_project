@@ -1,12 +1,5 @@
-// import Select from 'react-select';
 import React, { useState } from 'react';
-// import Select from 'react-select';
 import '../styles/Services.css';
-
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-
 
 
 const ServiceCard = ({

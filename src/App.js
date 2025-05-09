@@ -6,6 +6,9 @@ import Services2 from "./components/Services2.jsx";
 // import Services3 from "./components/Services3.jsx";
 import "./App.css";
 import Questions from "./components/Questions.jsx";
+import Questions_admin from "./components/Questions_admin.jsx";
+import Services_admin from "./components/Services_admin.jsx";
+
 
 
 function App() {
@@ -14,6 +17,7 @@ function App() {
   
     
 <Services></Services> 
+<Services_admin></Services_admin>
 <Services2></Services2>    
 <Payment></Payment>
 
@@ -21,6 +25,8 @@ function App() {
 <ContactUs></ContactUs>
  
 <Questions></Questions>
+
+<Questions_admin></Questions_admin>
      
      <Footer></Footer>
 
