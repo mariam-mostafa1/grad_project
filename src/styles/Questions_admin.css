@@ -7,7 +7,7 @@
     background: linear-gradient(145deg, #92d7ffb2, #ffffff);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    direction: rtl;
+    direction: ltr;
     transition: all 0.4s ease;
   }
   
@@ -109,13 +109,13 @@
   box-shadow: 0 18px 10px rgba(24, 83, 151, 0.2);
   z-index: 10; 
   }
-/*   
+  
     
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* transition: background-color 0.3s ease, transform 0.2s ease;
 
   font-size: 1rem;
   
-}
+} */
   
   .toggle-btn:hover {
     background-color: #3388e2be;
@@ -144,7 +144,7 @@
     }
   }
   
-  /* Responsive adjustments */
+  /* Responsive adjustments*/
   @media (max-width: 768px) {
     .questions-container {
       padding: 20px;
@@ -203,17 +203,17 @@
   }
   
   .add-btn {
-    background-color: #007bff;
+    background-color: #4175ad;
     color: #fff;
   }
   
   .edit-btn {
-    background-color: #f0ad4e;
+    background-color: #be975f;
     color: #fff;
   }
   
   .delete-btn {
-    background-color: #d9534f;
+    background-color: #aa4441;
     color: #fff;
   }
   

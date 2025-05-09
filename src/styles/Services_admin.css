@@ -31,7 +31,7 @@
     display: flex;
     border: 1px solid #ddd;
     width: 100%;
-    /* height: 96%; */
+    height: 96%;
     border-radius: 20px;
     align-items: center;
     padding: 1vh; 
@@ -41,9 +41,16 @@
     flex-direction: column;
   
   }
+
+  .card-image{
+    width: 100%; 
+    height: 30vh; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
   
   .service-caard-image {
-    width: 100%; 
+    width: 40%; 
     height: 30vh; 
     margin-right: 0vh;
   margin-top: 40px; 
@@ -228,14 +235,14 @@
     margin-right: 7px;
   }
   
-  .quantity-selector {
+  /* .quantity-selector {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 15px;
-  }
+  } */
   
-  .quantity-btndecrement,
+  /* .quantity-btndecrement,
   .quantity-btnincrement {
     background-color: #D9D9D9;
     color: rgb(22, 42, 78);
@@ -244,13 +251,13 @@
     padding: 5px 7px;
     font-size: 18px;
     transition: background-color 0.3s ease;
-  }
-  
+  } */
+/*   
   .quantity-number {
     font-size: 18px;
     font-weight: bold;
   }
-  
+   */
   .popup-overlay {
     position: fixed;
     top: 0;
@@ -306,75 +313,106 @@
     cursor: not-allowed;
   }
   
+
   .popup-image {
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+  margin: -60px;
+}
+.popup-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin: -10px;
+  } 
+  /* .popup-image {
     width: 70%;
     height: auto;
     border-radius: 30px;
     margin: -60px;
   }
-  .popup-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-    margin: -10px;
-  }
+ */
 
 
 /* CRUD Buttons Styling */
 
 .add-card-btn {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
+    background-color: #ffcc00;
+    color: rgb(28, 87, 155);
+    border: 2px solid #e5e907;
+    border-radius: 8px 0px 25px 0px;
+    box-shadow: 2px 4px 6px rgba(163, 112, 10, 0.6);
     cursor: pointer;
     margin-bottom: 20px;
     font-size: 16px;
   }
-  
-  .popup-overlay {
+  .add-card-btn:hover {
+    background-color: #e6c43e;
+    color: rgb(28, 87, 155);
+    border: 2px solid #e5e907;
+    border-radius: 8px 0px 25px 0px;
+    box-shadow: 2px 4px 6px rgba(163, 112, 10, 0.6);
+    transform: scale(1.03);
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+    
+.popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(34, 48, 70, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .popup-content {
-    background-color: white;
+
+.popup-content {
+    background-color: rgb(210, 228, 255);
     padding: 30px;
     border-radius: 10px;
     width: 400px;
     max-height: 90%;
     overflow-y: auto;
     position: relative;
-  }
+  } 
   
-  .close-popup {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: red;
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
+.close-popup {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5vh;
+  color: #03045f;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  background-color: #9DB6D6;
+  color: white;
+  box-shadow: 0px 5px 8px rgb(23, 51, 102);
+  cursor: pointer;
+}
   
   .popup-content input[type="text"],
   .popup-content input[type="number"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: -40px;
+    border: 2px solid #609ee4;
     border-radius: 6px;
   }
   
@@ -397,22 +435,25 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-  }
+  } 
   
   .popup-actions button:first-child {
-    background-color: #007bff;
+    background-color: #213f5f;
     color: white;
   }
   
   .popup-actions button:last-child {
-    background-color: #dc3545;
+    background-color: #723636;
     color: white;
   }
   
   
-  
+  .popup-actions button:hover {
+    background-color: #FFCC00;
+    color: white;
+  }
   .preview-image {
-    width: 100%;
+    width: 70%;
     max-height: 200px;
     object-fit: cover;
     margin-top: 10px;
@@ -430,7 +471,7 @@
   }
   
   .delete-service-btn {
-    background: red;
+    background: rgb(81, 127, 196);
     color: white;
     border: none;
     padding: 2px 6px;
@@ -442,17 +483,35 @@
   .add-service {
     margin-top: 10px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
   }
   
   .add-service input {
     flex: 1;
-    padding: 4px;
+    padding: 0px;
+ 
   }
   
   .add-service button {
     padding: 4px 10px;
+    background-color: #c3d9fa;
+    border-radius: 8px;
+    width: 75px;
   }
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

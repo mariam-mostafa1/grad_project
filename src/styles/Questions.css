@@ -113,7 +113,7 @@
     background: linear-gradient(145deg, #92d7ffb2, #ffffff);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    direction: rtl;
+    direction: ltr;
     transition: all 0.4s ease;
   }
   
@@ -154,6 +154,7 @@
     cursor: pointer;
     border-radius: 8px;
     padding: 10px;
+
   }
   
   
@@ -172,7 +173,9 @@
     border-bottom: 3px solid #007bff;
     transform: rotate(45deg);
     transition: transform 0.3s ease;
-    margin-right: 10px;
+    /* margin-right: 10%; */
+  margin-left: 96%;
+  /* display: none !important; */
   }
   
   .arrow.up {
@@ -280,3 +283,6 @@
       justify-content: space-between;
     }
   }
+
+
+  

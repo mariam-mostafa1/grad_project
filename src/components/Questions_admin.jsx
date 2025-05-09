@@ -3,13 +3,13 @@ import "../styles/Questions_admin.css";
 
 const Questions_admin = () => {
   const [questions, setQuestions] = useState([
-    { question: 'ما هي React؟', answer: 'React هي مكتبة جافاسكريبت لبناء واجهات المستخدم.' },
-    { question: 'كيف تعمل الـ state في React؟', answer: 'الـ state تُستخدم لإدارة البيانات القابلة للتغيير داخل الكومبوننت.' },
-    { question: 'ما الفرق بين props و state؟', answer: 'props لتمرير البيانات من الأب إلى الابن، بينما state لإدارة البيانات داخل الكومبوننت نفسه.' },
-    { question: 'ما هو JSX؟', answer: 'JSX هي صيغة شبيهة بـ HTML تُستخدم لكتابة عناصر React.' },
-    { question: 'ما هي الـ hooks؟', answer: 'hooks هي دوال تُتيح لك استخدام state ومزايا React الأخرى بدون كتابة class.' },
-    { question: 'كيف يتم استخدام useEffect؟', answer: 'يُستخدم useEffect لتنفيذ side effects مثل جلب البيانات أو تحديث الـ DOM.' },
-    { question: 'ما هو Virtual DOM؟', answer: 'Virtual DOM هو نسخة افتراضية من الـ DOM الحقيقي لتحديثه بكفاءة أكبر.' },
+    { question: 'What types of laundry services do you offer?', answer: 'What types of laundry services do you offer?' },
+    { question: 'How do I schedule a pickup and delivery?', answer: 'You can schedule a pickup and delivery directly through our website or mobile app. Just select a time slot, provide your address, and we will take care of the rest.' },
+    { question: 'How long does it take to get my clothes back?', answer: 'Turnaround time is typically 24 to 48 hours, depending on the service and your location. We also offer express service for same-day or next-day delivery.' },
+    { question: 'What if I have special instructions for my clothes?', answer: 'No problem! During the online booking, you can add notes or special instructions like preferred detergent, temperature settings, or stain concerns.' },
+    { question: 'Are my clothes safe and insured?', answer: 'Yes, we take great care with your items and use professional-grade equipment and detergents. In the rare case of damage or loss, we offer compensation according to our customer policy.' },
+    { question: 'What payment methods do you accept?', answer: 'We accept all major credit/debit cards, digital wallets, and sometimes cash on delivery depending on the area.' },
+    { question: 'Do I need to separate my clothes before pickup?', answer: 'No, it’s not necessary. Our team will sort items based on color and fabric type before washing. However, if you have items that need special care, it is best to label them or add a note during booking.' },
   ]);
 
   const [showMore, setShowMore] = useState(false);
@@ -63,7 +63,7 @@ const Questions_admin = () => {
 
   return (
     <div className="questions-container">
-      <div className="head_ques">Common Questions</div>
+      <div className="head_ques">Frequently Asked Questions</div>
 
       <div className="crud-controls">
         <input
@@ -88,7 +88,7 @@ const Questions_admin = () => {
           <li key={index} className="question-item">
             <div className="question-header" onClick={() => handleToggleQuestion(index)}>
               <h3>{item.question}</h3>
-              <span className={`arrow ${openIndex === index ? 'up' : 'down'}`}></span>
+              {/* <span className={`arrow ${openIndex === index ? 'up' : 'down'}`}></span> */}
             </div>
             <div className={`answer-wrapper ${openIndex === index ? 'open' : ''}`}>
               {editIndex === index ? (

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
     "choices.js": "^11.1.0",
