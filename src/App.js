@@ -8,11 +8,12 @@ import HowWorks from "./components/HowWorks.jsx";
 import AboutServices from "./components/AboutServices.jsx";
 import Questions from "./components/Questions.jsx";
 import ContactUs from "./components/ContactUs.jsx";
+import ContactUs_admin from "./components/ContactUs_admin.jsx";
 import Footer from "./components/Footer.jsx";
 import Payment from "./components/payment.jsx";
 import Services from "./components/Services.jsx";
 import Services_admin from "./components/Services_admin.jsx";
-
+import Services_admin2 from "./components/Services_admin2.jsx";
 import Services2 from "./components/Services2.jsx";
 import SignUp from "./components/SignUp.jsx";
 import SignIn from "./components/SignIn.jsx";
@@ -31,14 +32,15 @@ function App() {
  <Navbar></Navbar>   
 <Services></Services> 
 <Services_admin></Services_admin>
-<Services2></Services2>    
+<Services2></Services2>  
+<Services_admin2></Services_admin2>  
 <Payment></Payment>
 
   
 
 
 <ContactUs></ContactUs>
- 
+ <ContactUs_admin></ContactUs_admin>
 <Questions></Questions>
 <Questions_admin></Questions_admin>
      

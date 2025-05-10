@@ -116,36 +116,29 @@ const ServiceCard = ({ card, onEdit, onDelete, servicesList, onUpdateServicesLis
   );
 };
 
-const Services_admin = () => {
+const Services_admin2 = () => {
   const [cards, setCards] = useState([
-    {
-      image: '/images/t-shirt.jpg',
-      title: 'T-shirt',
-      price: 100,
-      ID: 1,
-      services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
-    },
-    {
-      image: '/images/Pants.jpg',
-      title: 'Pants',
-      price: 120,
-      ID: 2,
-      services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
-    },
-    {
-      image: '/images/jacket.jpg',
-      title: 'Jacket',
-      price: 100,
-      ID: 3,
-      services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
-    },
-    {
-      image: '/images/Skirt.jpg',
-      title: 'Skirt',
-      price: 120,
-      ID: 4,
-      services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
-    },
+     {
+            image: '/images/Curtains.jpg',
+            title: 'Curtains',
+            price: 100,
+            ID: 1,
+            services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
+        },
+        {
+            image: '/images/Sofa.jpg',
+            title: 'Sofa',
+            price: 120,
+            ID: 2,
+            services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
+        },
+        {
+            image: '/images/Carpet.jpg',
+            title: 'Carpet',
+            price: 100,
+            ID: 3,
+            services: ['Cleaning & Dry Cleaning', 'Cleaning', 'Dry Cleaning', 'Stains Removal', 'Adjustments & Repairs'],
+        },
   ]);
 
   const [nextId, setNextId] = useState(5);
@@ -180,9 +173,9 @@ const Services_admin = () => {
 
   return (
     <div className="serv_contaiinn">
-      <div className="clothes-text">
-      C.L.O.T.H.E.S
-    </div>
+        <div className="household-text">
+                H.O.U.S.E.H.O.L.D
+            </div>
       <button className="add-card-btn" onClick={handleAddCard}>Add New Item</button>
       <div className="services_containeeer">
         {cards.map((card) => (
@@ -200,4 +193,4 @@ const Services_admin = () => {
   );
 };
 
-export default Services_admin;
+export default Services_admin2;
