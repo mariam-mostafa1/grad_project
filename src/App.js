@@ -30,6 +30,13 @@ function App() {
     <>
   
  <Navbar></Navbar>   
+ <Home></Home>
+ <AboutUs></AboutUs>
+ <Feedback></Feedback>
+ <HowWorks></HowWorks>
+ <AboutServices></AboutServices>
+ <SignIn></SignIn>
+ <SignUp></SignUp>
 <Services></Services> 
 <Services_admin></Services_admin>
 <Services2></Services2>  

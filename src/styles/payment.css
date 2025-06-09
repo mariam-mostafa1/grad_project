@@ -131,6 +131,7 @@
 @media (max-width: 968px) {
   .fo0rm-griid {
     grid-template-columns: 1fr;
+    
   }
   
   .bottun-containn {

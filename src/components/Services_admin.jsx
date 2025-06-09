@@ -49,11 +49,14 @@ const ServiceCard = ({ card, onEdit, onDelete, servicesList, onUpdateServicesLis
 
   return (
     <>
+
+ 
+
       <div className="service-caard" onClick={() => setIsPopupOpen(true)}>
         {/* {card.image && <img src={card.image} alt={card.title} />} */}
         {card.image && <img src={card.image} alt={card.title} className="card-image" />}
-        <h3>{card.title}</h3>
-        <p>{card.price} EGP</p>
+        <h3 className="service-caard-title">{card.title}</h3>
+        <p className="price">{card.price} EGP</p>
       </div>
 
       {isPopupOpen && (
