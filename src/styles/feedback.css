@@ -119,6 +119,7 @@
     
     .feedback-form {
       margin-top: 20px;
+      /* margin-left: 180px; */
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -131,7 +132,7 @@
       color: #000000;
     }
     
-    .feedback-input {
+    .feedback-input, .feedback-message {
       width: 70%;
       height: 50px;
       padding: 10px;
@@ -147,6 +148,10 @@
         border-color: #899eba;
       }
   
+    }
+
+    .feedback-message {
+      height: 100px;
     }
     
     .feedback-button {
@@ -183,7 +188,7 @@
   @media screen and (min-width: 1050px) {
   
     .feedback-container {
-      max-width: 500px;
+      max-width: 800px;
       margin: 0px auto;
       padding: 20px;
       background: white;
@@ -224,8 +229,8 @@
     
     .feedback-item {
       flex: 0 0 auto;
-      width: 250px;
-      height: 120px;
+      width: 270px;
+      height: 130px;
       background: #ffffff;
       padding: 10px;
       border-radius: 10px;
@@ -267,7 +272,8 @@
     
     .feedback-text {
       font-size: 14px;
-      padding-top: 3px;
+      width: 180px;
+      /* padding-top: -5px; */
       color: #333333;
       font-family: roboto;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -304,6 +310,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      align-items: left;
+  
     }
     
     .feedback-label {
@@ -311,9 +319,10 @@
       font-family: roboto;
       font-weight: bold;
       color: #000000;
+      
     }
     
-    .feedback-input {
+    .feedback-input, .feedback-message {
       width: 70%;
       height: 50px;
       padding: 10px;
@@ -330,12 +339,17 @@
       }
   
     }
+
+    .feedback-message {
+      height: 100px;
+    }
     
     .feedback-button {
       background: #9DB6D6;
       color: white;
       font-family: system-ui, roboto ;
       /* font-weight: 10px; */
+      width: 70%;
       border: none;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       margin-top: 20px;

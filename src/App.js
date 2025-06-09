@@ -8,63 +8,82 @@ import HowWorks from "./components/HowWorks.jsx";
 import AboutServices from "./components/AboutServices.jsx";
 import Questions from "./components/Questions.jsx";
 import ContactUs from "./components/ContactUs.jsx";
-import ContactUs_admin from "./components/ContactUs_admin.jsx";
 import Footer from "./components/Footer.jsx";
 import Payment from "./components/payment.jsx";
 import Services from "./components/Services.jsx";
-import Services_admin from "./components/Services_admin.jsx";
-import Services_admin2 from "./components/Services_admin2.jsx";
 import Services2 from "./components/Services2.jsx";
 import SignUp from "./components/SignUp.jsx";
 import SignIn from "./components/SignIn.jsx";
+import FeedbackAdmin from "./Admin/FeedbackAdmin.jsx";
+import ContactUsAdmin from "./Admin/ContactUsAdmin.jsx";
+import ServicesAdmin from "./Admin/ServicesAdmin.jsx";
+import ServicesAdmin2 from "./Admin/ServicesAdmin2.jsx";
+import QuestionsAdmin from "./Admin/QuestionsAdmin.jsx";
+import ProgressAdmin from "./Admin/ProgressAdmin.jsx";
 import "./App.css";
-import Questions_admin from "./components/Questions_admin.jsx";
-import MySubmit from "./components/MySubmit.jsx";
 
+
+function AdminLayout() {
+  return (
+    <div>
+        <FeedbackAdmin />
+        <QuestionsAdmin />
+        <ContactUsAdmin />
+        <ServicesAdmin />
+        <ServicesAdmin2 />
+        <ProgressAdmin />
+      
+    </div>
+  );
+}
 
 function App() {
 
   const location = useLocation();
-  const hideNavbar = location.pathname === '/signup' || location.pathname === '/signin';
+  const hideNavbar = location.pathname.toLowerCase().startsWith('/admin') ||
+  location.pathname.toLowerCase() === '/signup' ||
+  location.pathname.toLowerCase() === '/signin';
 
   return (
+
     <>
+    {!hideNavbar && <Navbar />}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+          
+            <Home></Home>   
+            <AboutUs></AboutUs>   
+            <Feedback></Feedback> 
+            <HowWorks></HowWorks>    
+            <AboutServices></AboutServices>  
+            <Questions></Questions>
+            <ContactUs></ContactUs>
+            <Footer></Footer>
+          </>
+        }
+      />
+      <Route path="/SignUp" element={<SignUp />} />
+      <Route path="/SignIn" element={<SignIn />} />
+      <Route path="/Services" element={<Services />} />
+      <Route path="/Services2" element={<Services2 />} />
+      <Route path="/Payment" element={<Payment />} />
+
+
+          <Route path="/admin" element={<AdminLayout />}>
+          {/* <Route index element={<Navigate to="services" />} /> */}
+          
+           </Route>
+    </Routes>
+  </>
   
- <Navbar></Navbar>   
- <Home></Home>
- <AboutUs></AboutUs>
- <Feedback></Feedback>
- <HowWorks></HowWorks>
- <AboutServices></AboutServices>
- <SignIn></SignIn>
- <SignUp></SignUp>
-<Services></Services> 
-<Services_admin></Services_admin>
-<Services2></Services2>  
-<Services_admin2></Services_admin2>  
-<Payment></Payment>
 
-  
-
-
-<ContactUs></ContactUs>
- <ContactUs_admin></ContactUs_admin>
-<Questions></Questions>
-<Questions_admin></Questions_admin>
-     
-     <Footer></Footer>
-     {/* <MySubmit></MySubmit> */}
-  
-      
-
-     
-     
-
-
-    </>
   );
 }
 
 export default App;
+
 
 

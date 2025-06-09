@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import '../Admin/ContactUsAdmin.css';
+
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -66,8 +69,8 @@
 
 // export default ContactUs_admin;
 
-import React, { useState } from 'react';
-import '../styles/ContactUs_admin.css';
+// import React, { useState } from 'react';
+// import '../styles/ContactUs_admin.css';
 
 const ContactUs_admin = () => {
   const [contacts, setContacts] = useState([

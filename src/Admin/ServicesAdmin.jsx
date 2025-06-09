@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Services_admin.css';
+import '../Admin/ServicesAdmin.css';
 
 const ServiceCard = ({ card, onEdit, onDelete, servicesList, onUpdateServicesList }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

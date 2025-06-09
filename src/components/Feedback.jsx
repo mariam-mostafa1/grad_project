@@ -108,15 +108,15 @@ const Feedback = () => {
         />
 
         <label htmlFor="feedback" data-aos="fade-up" className="feedback-label">Your Feedback</label>
-        <input
+        <textarea
           type="text"
           id="feedback"
           name="text"
           value={input.text}
           onChange={handleChange}
           placeholder="Your opinion..."
-          data-aos="fade-up" className="feedback-input"
-        />
+          data-aos="fade-up" className="feedback-message"></textarea>
+        
 
         <button type="submit" data-aos="fade-up" className="feedback-button">Submit</button>
       </form>

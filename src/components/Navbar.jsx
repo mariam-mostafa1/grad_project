@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/navbar.css';
+import { Link } from "react-router-dom";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { BsList } from "react-icons/bs";
 
@@ -47,7 +48,8 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Services</a>
+                        {/* <a href='a' className='navLink'>Services</a> */}
+                        <Link to="/Services, /Services2, /Payment" className="navLink"> Services </Link>
                     </li>
 
                     <li className='navItem'>
@@ -59,7 +61,8 @@ const Navbar = () => {
                     </li>
 
                     <li className='navItem'>
-                        <a href='a' className='navLink'>Booking</a>
+                        {/* <a href='a' className='navLink'>Booking</a> */}
+                        <Link to="/Payment" className="navLink"> Booking </Link>
                     </li>
                 </ul>
                 
