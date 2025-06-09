@@ -18,7 +18,7 @@ const SignUp = () => {
       {/* Left side */}
       <div
         className="signup__left"
-        style={{ backgroundImage: `url('/images/img5.png')` }}
+        style={{ backgroundImage: "url('/images/img5.png')" }}
       >
         <div data-aos="fade-left" className="signup__overlay">
           <h2>
@@ -76,60 +76,3 @@ const SignUp = () => {
 export default SignUp;
 
 
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import '../styles/signup.css';
-// import { FcGoogle } from "react-icons/fc";
-// import { FaFacebookF } from "react-icons/fa6";
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
-
-// export default function Signup() {
-
-//   useEffect(()=>{
-//     Aos.init({duration:1500})
-//   }, [])
-
-//   return (
-//     <div className="signup-container">
-//       <div className="signup-image" 
-//       style={{ backgroundImage: "url('/images/img5.png')" }}>
-        
-//         <h2>Welcome to our <br />Community</h2>
-//         <p>Already you have an account</p>
-//         <a href="a" className="signin-link">Sign In</a>
-//       </div>
-      
-
-//       <div data-aos="fade-left" className="signup-form">
-//         <h2>Sign up</h2>
-//         <input type="text" placeholder="First Name" />
-//         <input type="text" placeholder="Last Name" />
-//         <input type="email" placeholder="Email Address" />
-//         <input type="password" placeholder="Password" />
-        
-//         <div className="show-password">
-//           <input type="checkbox" id="show-password" />
-//           <label htmlFor="show-password">Show password</label>
-//         </div>
-
-//         <button className="signup-button">Sign up</button>
-
-//         <p className="or-separator">or</p>
-
-//         <button className="google-button">
-//         <FcGoogle className="g-icon"/> Continue with Google
-//           Continue with google
-//         </button>
-
-//         <button className="facebook-button">
-//         <FaFacebookF className="fb-icon"/> Continue with Facebook
-//           Continue with facebook
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }

@@ -1,0 +1,100 @@
+.booking-admin-container {
+    background-color: #EFFAFF;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .today-button {
+    padding: 8px 16px;
+    background-color: white;
+    border: 2px solid #7dbdf2;
+    border-radius: 12px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .booking-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 16px;
+    padding: 16px;
+    max-width: 700px; /* عرض أكبر */
+    width: 100%;
+    display: flex; /* تخطيط أفقي */
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .user-info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .services {
+    background-color: #EFFAFF;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    flex: 1;
+    max-width: 350px;
+    height: 200px;
+  }
+  
+  /* .see-more-button {
+    margin-top: 20px;
+    background-color: #ffe066;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+  } */
+
+  .see-more-button {
+    margin-top: 20px;
+    background-color: #ffe066;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.3s ease; /* عشان يكون فيه سلاسة في التغير */
+  }
+  
+  /* تأثير لما الماوس يكون فوق الزرار */
+  .see-more-button:hover {
+    background-color: #ffd633; /* لون أصفر أغزر شوية */
+    box-shadow: 0 6px 12px rgba(255, 198, 0, 0.6); /* ظل حول الزرار */
+    transform: translateY(-3px); /* يطلع لفوق شويه */
+  }
+  
+  
+  

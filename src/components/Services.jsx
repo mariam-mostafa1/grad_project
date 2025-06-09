@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/Services.css';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import Services2 from './Services2.jsx';
+import Payment from './payment.jsx';
+import Footer from './Footer.jsx';
+
 
 
 const ServiceCard = ({
@@ -81,7 +87,7 @@ const ServiceCard = ({
 >
   Submit
 </button>
-
+        
 
           </div>
         </div>
@@ -91,6 +97,16 @@ const ServiceCard = ({
 };
 
   const Services = () => {
+    const location = useLocation();
+
+useEffect(() => {
+  if (location.hash === '#payment') {
+    const element = document.getElementById('payment');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, [location]);
     const [currentPage, setCurrentPage] = useState(0);
     const cardsPerPage = 4;
   
@@ -246,7 +262,14 @@ const ServiceCard = ({
           >
             next
           </button>
+
+         
         </div>
+        <Services2 />
+        <div id="payment" style={{ width: '100%' }}>
+         <Payment />
+        </div>
+        <Footer />
       </div>
     );
   };

@@ -75,6 +75,7 @@
             font-size: 1rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
+            text-decoration: none;
 
             &:hover {
               color: #63779b;
@@ -140,14 +141,31 @@
             font-weight: 600 ;
             padding: 0px 10px;
             font-size: 18px;
+            text-decoration: none !important;
             /* font-weight: 500; */
 
             &:hover{
               color:#63779b;
             }
           }
+        
         }
       }
     }
   }
+}
+
+.navLink.activeLink {
+  color: #63779b !important;
+  border-bottom: 2px solid #63779b;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.navLink,
+.navLink:hover,
+.navLink:focus,
+.navLink:active,
+.navLink:visited {
+  text-decoration: none !important;
 }

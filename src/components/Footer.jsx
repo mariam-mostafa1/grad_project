@@ -50,9 +50,10 @@ const Footer = () => {
       <div className="footer-section3">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="Payment.jsx">Home</a></li>
-          <li><a href="Payment.jsx">About Us</a></li>
-          <li><a href="Payment.jsx">Services</a></li>
+        {/* <a href="/#Home" className="navLink">Home</a> */}
+          <li><a href="/#Home">Home</a></li>
+          <li><a href="/#AboutUs">About Us</a></li>
+          <li><a href="/#AboutServices">Services</a></li>
         </ul>
       </div>
 

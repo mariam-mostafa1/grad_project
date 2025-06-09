@@ -185,15 +185,39 @@
 }
 
 
-@media screen and (max-width: 1050px) {
+@media (max-width: 1050px) {
+  .signup {
+    flex-direction: column;
+  }
 
-  
-}
+  .signup__left {
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+  }
 
+  .signup__overlay h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
+  .signup__right {
+    width: 100%;
+    padding: 2rem;
+  }
 
+  .signup__form {
+    margin: 0px 20px;
+  }
 
-@media screen and (min-width: 1050px) {
-
-
+  .signup__social {
+    margin: 0px 40px;
+  }
 }

@@ -162,6 +162,7 @@ const Payment = () => {
           </div>
         </div>
       </form>
+
     </div>
   );
 };

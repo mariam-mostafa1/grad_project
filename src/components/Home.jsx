@@ -1,19 +1,30 @@
 import React, { useEffect } from "react";
 import '../styles/home.css';
-import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import img1 from "../images/img1.jpg";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
+  const location = useLocation();
 
-  useEffect(()=>{
-    Aos.init({duration:1000})
-  }, [])
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location]);
 
   return (
-    <section id= "Home" className="home">
+    <section id="Home" className="home">
       <div className="overlay"></div>
       <img src="/images/img1.jpg" className="img1" alt="Background" />
       <div className="homeContent container">
@@ -37,17 +48,13 @@ const Home = () => {
           <a href="a" className="startButton">
             Get Started
           </a>
-          {/* <Link to="/Services" className='startButton'>Get Started</Link> */}
-
           <h2>Join To Our Community!</h2>
           <Link to="/signup" className="signupButton">
             Sign Up
           </Link>
-          
           <Link to="/signin" className="signinButton">
             Sign In
           </Link>
-          
         </div>
       </div>
     </section>

@@ -19,6 +19,7 @@ import ContactUsAdmin from "./Admin/ContactUsAdmin.jsx";
 import ServicesAdmin from "./Admin/ServicesAdmin.jsx";
 import ServicesAdmin2 from "./Admin/ServicesAdmin2.jsx";
 import QuestionsAdmin from "./Admin/QuestionsAdmin.jsx";
+import BookingAdmin from "./Admin/BookingAdmin.jsx";
 import ProgressAdmin from "./Admin/ProgressAdmin.jsx";
 import "./App.css";
 
@@ -31,6 +32,7 @@ function AdminLayout() {
         <ContactUsAdmin />
         <ServicesAdmin />
         <ServicesAdmin2 />
+        <BookingAdmin />
         <ProgressAdmin />
       
     </div>
@@ -65,14 +67,13 @@ function App() {
           </>
         }
       />
+      
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/SignIn" element={<SignIn />} />
       <Route path="/Services" element={<Services />} />
       <Route path="/Services2" element={<Services2 />} />
       <Route path="/Payment" element={<Payment />} />
-
-
-          <Route path="/admin" element={<AdminLayout />}>
+      <Route path="/admin" element={<AdminLayout />}>
           {/* <Route index element={<Navigate to="services" />} /> */}
           
            </Route>

@@ -183,4 +183,33 @@
      }
    }
  }
+
+
+ @media (max-width: 1050px) {
+  .signin {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .signin__right {
+    width: 100%;
+    height: 300px; /* أو الارتفاع اللي يناسب */
+    border-radius: 50px 50px 0 0;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .signin__left {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .signin__form {
+    margin: 0 20px;
+  }
+}
+
+
  
