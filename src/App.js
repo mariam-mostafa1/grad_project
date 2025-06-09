@@ -19,6 +19,7 @@ import SignUp from "./components/SignUp.jsx";
 import SignIn from "./components/SignIn.jsx";
 import "./App.css";
 import Questions_admin from "./components/Questions_admin.jsx";
+import MySubmit from "./components/MySubmit.jsx";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
 <Questions_admin></Questions_admin>
      
      <Footer></Footer>
+     {/* <MySubmit></MySubmit> */}
   
       
 

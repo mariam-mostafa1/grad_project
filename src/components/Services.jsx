@@ -69,6 +69,20 @@ const ServiceCard = ({
                 +
               </button>
             </div>
+
+<button
+  className="submitt-bttn"
+  onClick={() => {
+    // هنا ممكن تعملي أي حاجة عايزاها مع البيانات، زي حفظها أو إرسالها لسيرفر
+    alert(`Selected services: ${selectedServices.join(", ")}\nQuantity: ${quantity}`);
+
+    setIsPopupOpen(false); // تقفل البوب أب بعد التأكيد
+  }}
+>
+  Submit
+</button>
+
+
           </div>
         </div>
       )}

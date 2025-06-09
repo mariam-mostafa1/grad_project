@@ -197,3 +197,33 @@
 .delete-button:hover {
   background-color: #e53935;
 }
+
+
+
+
+
+.reply-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-reply-button {
+  align-self: flex-end;
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
