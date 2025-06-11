@@ -75,9 +75,11 @@ const Navbar = () => {
                         background: "linear-gradient(to right, #303949  90%, #7389AF  )",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
+                        textShadow: "none",
                         fontSize: "30px",
-                        fontWeight: "1500",
+                        fontWeight: "800",
                     }}>LAVO</h1>
+                     {/* <h1 className="gradient-text">LAVO</h1> */}
                    
                 </div>
 

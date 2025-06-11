@@ -47,6 +47,7 @@
                     font-family: 'Roboto Slab';
                     color: rgb(0, 0, 0);
                     padding: 170px 0 0 20px;
+                    text-shadow: none;
                     
                 }
     
@@ -158,6 +159,7 @@
             align-items: center;
             justify-content: center;
             margin: auto;
+        }
         
             .overlay{
                 position: absolute;
@@ -189,6 +191,7 @@
                 position: relative;
                 color: #ffffff;
                 z-index: 100;
+            }
         
                 .textDiv{
         
@@ -197,6 +200,7 @@
                         font-weight: bold;
                         font-family: 'Roboto Slab';
                         color: rgb(0, 0, 0);
+                        text-shadow: none;
                         padding: 180px 0 0 60px;
                         
                     }
@@ -289,7 +293,7 @@
                             }
         
         
-            }
-        }
+            
+        
     
       }
