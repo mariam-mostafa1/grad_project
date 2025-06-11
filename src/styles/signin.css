@@ -153,11 +153,18 @@
        font-weight: 400;
        cursor: pointer;
        margin: 0px 110px;
+       text-decoration: none; /* لإزالة الخط تحت الرابط */
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
        /* margin-bottom: 1rem; */
+
+      &:hover {
+      transform: translatex(-4px);
+}
  
        &.google {
          background: #F1F1F1;
          border: none;
+         color: black;
          font-size: 18px;
          margin-bottom: 15px;
          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -212,4 +219,23 @@
 }
 
 
- 
+ .input-error {
+  border: 2px solid red !important;
+  animation: shake 0.3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}

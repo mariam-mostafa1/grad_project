@@ -67,7 +67,7 @@ function App() {
           </>
         }
       />
-      
+      <Route path="/home" element={<Home />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/SignIn" element={<SignIn />} />
       <Route path="/Services" element={<Services />} />

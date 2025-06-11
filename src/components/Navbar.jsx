@@ -78,6 +78,7 @@ const Navbar = () => {
                         fontSize: "30px",
                         fontWeight: "1500",
                     }}>LAVO</h1>
+                   
                 </div>
 
                 <div className={active}>
