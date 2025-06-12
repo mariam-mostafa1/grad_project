@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Questions.css";
+
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -7,7 +11,7 @@ import "../styles/Questions.css";
 
 
 const questionsData = [
- { question: 'What types of laundry services do you offer?', answer: 'What types of laundry services do you offer?' },
+ { question: 'What types of laundry services do you offer?',   answer: 'We offer washing, drying, ironing, dry cleaning, and special care for delicate fabrics.' },
     { question: 'How do I schedule a pickup and delivery?', answer: 'You can schedule a pickup and delivery directly through our website or mobile app. Just select a time slot, provide your address, and we will take care of the rest.' },
     { question: 'How long does it take to get my clothes back?', answer: 'Turnaround time is typically 24 to 48 hours, depending on the service and your location. We also offer express service for same-day or next-day delivery.' },
     { question: 'What if I have special instructions for my clothes?', answer: 'No problem! During the online booking, you can add notes or special instructions like preferred detergent, temperature settings, or stain concerns.' },
@@ -17,6 +21,15 @@ const questionsData = [
 ];
 
 const Questions = () => {
+
+useEffect(() => {
+    AOS.init({
+      duration: 1000, // مدة الأنيميشن بالملي ثانية
+      once: false,    // false = يعيد الأنيميشن كل مرة يظهر فيها العنصر
+    });
+  }, []);
+
+
   const [showMore, setShowMore] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -34,10 +47,10 @@ const Questions = () => {
   return (
     <section id="Questions">
     <div className="questions-container">
-      <div className="head_ques">Frequently Asked Questions</div>
+      <div className="head_ques" data-aos="fade-up">Frequently Asked Questions</div>
       <ul>
         {visibleQuestions.map((item, index) => (
-          <li key={index} className="question-item">
+          <li key={index} className="question-item" data-aos="fade-up">
             <div className="question-header" onClick={() => handleToggleQuestion(index)}>
                  <h3>{item.question}</h3>
 
@@ -50,7 +63,7 @@ const Questions = () => {
           </li>
         ))}
       </ul>
-      <button className="toggle-btn" onClick={handleToggleShowMore}>
+      <button className="toggle-btn" onClick={handleToggleShowMore} data-aos="fade-up">
         {showMore ? 'See Less' : 'See More'}
       </button>
     </div>

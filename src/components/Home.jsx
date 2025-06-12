@@ -49,10 +49,10 @@ const Home = () => {
             Get Started
           </a>
           <h2>Join To Our Community!</h2>
-          <Link to="/signup" className="signupButton">
+          <Link to="/signup" className="signupButton" target="_blank" rel="noopener noreferrer">
             Sign Up
           </Link>
-          <Link to="/signin" className="signinButton">
+          <Link to="/signin" className="signinButton" target="_blank" rel="noopener noreferrer">
             Sign In
           </Link>
         </div>

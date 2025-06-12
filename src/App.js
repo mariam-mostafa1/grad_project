@@ -35,6 +35,7 @@ function AdminLayout() {
         <ServicesAdmin2 />
         <BookingAdmin />
         <ProgressAdmin />
+        <Footer />
       
     </div>
   );
@@ -69,6 +70,7 @@ function App() {
           </>
         }
       />
+      
       <Route path="/home" element={<Home />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/SignIn" element={<SignIn />} />
@@ -83,8 +85,13 @@ function App() {
   </>
   
 
+  
+
   );
 }
+
+
+
 
 export default App;
 

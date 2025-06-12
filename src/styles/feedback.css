@@ -170,6 +170,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
+      
     
       &:hover {
         background: #d7e2ef;
@@ -361,6 +362,8 @@
       border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
+  border-radius: 20px 0px 35px 0px;
+
     
       &:hover {
         background: #d7e2ef;
