@@ -22,6 +22,7 @@ import QuestionsAdmin from "./Admin/QuestionsAdmin.jsx";
 import BookingAdmin from "./Admin/BookingAdmin.jsx";
 import ProgressAdmin from "./Admin/ProgressAdmin.jsx";
 import "./App.css";
+import MyAccount from "./components/MyAcount.jsx";
 
 
 function AdminLayout() {
@@ -63,6 +64,7 @@ function App() {
             <AboutServices></AboutServices>  
             <Questions></Questions>
             <ContactUs></ContactUs>
+            <MyAccount></MyAccount>
             <Footer></Footer>
           </>
         }
