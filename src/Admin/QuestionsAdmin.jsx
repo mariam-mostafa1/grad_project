@@ -32,14 +32,6 @@ const Questions_admin = () => {
     setEditIndex(null);
   };
 
-  const handleAddQuestion = () => {
-    if (newQuestion.trim() && newAnswer.trim()) {
-      setQuestions([...questions, { question: newQuestion, answer: newAnswer }]);
-      setNewQuestion('');
-      setNewAnswer('');
-    }
-  };
-
   const handleDelete = (index) => {
     const updated = [...questions];
     updated.splice(index, 1);
@@ -65,30 +57,39 @@ const Questions_admin = () => {
     <div className="questions-container">
       <div className="head_ques">Frequently Asked Questions</div>
 
-      <div className="crud-controls">
+      <form
+        className="crud-controls"
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (newQuestion.trim() && newAnswer.trim()) {
+            setQuestions([...questions, { question: newQuestion.trim(), answer: newAnswer.trim() }]);
+            setNewQuestion('');
+            setNewAnswer('');
+          }
+        }}
+      >
         <input
           type="text"
-          placeholder="أدخل السؤال"
+          placeholder="Add question"
           value={newQuestion}
           onChange={(e) => setNewQuestion(e.target.value)}
           className="crud-input"
         />
         <input
           type="text"
-          placeholder="أدخل الإجابة"
+          placeholder="Add answer"
           value={newAnswer}
           onChange={(e) => setNewAnswer(e.target.value)}
           className="crud-input"
         />
-        <button className="crud-btn add-btn" onClick={handleAddQuestion}>إضافة</button>
-      </div>
+        <button type="submit" className="crud-btn add-btn">Add</button>
+      </form>
 
       <ul>
         {visibleQuestions.map((item, index) => (
           <li key={index} className="question-item">
             <div className="question-header" onClick={() => handleToggleQuestion(index)}>
               <h3>{item.question}</h3>
-              {/* <span className={`arrow ${openIndex === index ? 'up' : 'down'}`}></span> */}
             </div>
             <div className={`answer-wrapper ${openIndex === index ? 'open' : ''}`}>
               {editIndex === index ? (
@@ -105,12 +106,12 @@ const Questions_admin = () => {
                     onChange={(e) => setEditAnswer(e.target.value)}
                     className="crud-input"
                   />
-                  <button className="crud-btn edit-btn" onClick={() => handleSaveEdit(index)}>حفظ</button>
+                  <button className="crud-btn edit-btn" onClick={() => handleSaveEdit(index)}>Save</button>
                 </>
               ) : (
                 <>
                   <p className="answer">{item.answer}</p>
-                  <button className="crud-btn edit-btn" onClick={() => handleEdit(index)}>تعديل</button>
+                  <button className="crud-btn edit-btn" onClick={() => handleEdit(index)}>Update</button>
                   <button className="crud-btn delete-btn" onClick={() => handleDelete(index)}>حذف</button>
                 </>
               )}
