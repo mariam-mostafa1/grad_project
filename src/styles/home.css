@@ -235,7 +235,7 @@
                         text-decoration: none;
                        }
         
-                    .startButton{
+                    /* .startButton{
                         background-color: rgba(224, 168, 0, 0.8);
                         color: #333333;
                         font-family: 'Roboto';
@@ -256,14 +256,14 @@
                             background-color:rgba(241, 241, 241, 0.8);
                             transform: scale(0.8);  
                                 }
-                                }
+                                } */
         
                         h2{
                             font-size: 28px;
                             color: #000000;
                             font-family: 'Roboto';
                             font-weight: bold;
-                            margin: 60px 0px 25px 5% ;
+                            margin: 140px 0px 25px 5% ;
                             /* margin-bottom: 20px; */
                         }
         
@@ -293,7 +293,37 @@
         
                        
                             }
-        
+
+
+ .accountCircle {
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #E0A800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200; /* فوق كل حاجة */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.accountCircle:hover {
+  transform: scale(0.95);
+  border-color: #ffffff;
+}
+
+.accountImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
         
             
         

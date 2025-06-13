@@ -21,7 +21,7 @@ const MyAccount = () => {
   const [editMode, setEditMode] = useState(false);
   const [formData, setFormData] = useState({ ...user });
 
-  const [orders, setOrders] = useState([
+  const [orders] = useState([
     {
       id: 1,
       product: 'تيشيرت أبيض',

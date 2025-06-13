@@ -2,6 +2,7 @@
   background-color: #ffffff;
   padding: 60px 20px;
   min-height: 100vh;
+  overflow: visible;
 }
 
 .main-title {
@@ -23,6 +24,8 @@
   max-width: 1100px;  
   margin: 0 auto;
   padding: 0 20px;
+  overflow: visible;
+  
 }
 
 /* الكارد */
@@ -45,6 +48,7 @@
   /* transform: scale(1.03); */
   transform: translateY(-20px) scale(1.05);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+ 
 }
 
 /* الأيقونة والنص جنب بعض */

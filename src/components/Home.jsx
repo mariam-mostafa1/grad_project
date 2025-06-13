@@ -27,6 +27,13 @@ const Home = () => {
     <section id="Home" className="home">
       <div className="overlay"></div>
       <img src="/images/img1.jpg" className="img1" alt="Background" />
+      <Link to="/MyAccount" className="accountCircle">
+      <img
+       src="https://randomuser.me/api/portraits/women/44.jpg"
+       alt="My Account"
+       className="accountImg"
+      />
+     </Link>
       <div className="homeContent container">
         <div className="textDiv">
           <h1 data-aos="fade-up" className="homeTitle">
@@ -45,9 +52,7 @@ const Home = () => {
         </div>
 
         <div data-aos="fade-up" className="buttonDiv container">
-          <a href="a" className="startButton">
-            Get Started
-          </a>
+         
           <h2>Join To Our Community!</h2>
           <Link to="/signup" className="signupButton" target="_blank" rel="noopener noreferrer">
             Sign Up

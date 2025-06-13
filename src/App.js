@@ -46,7 +46,8 @@ function App() {
   const location = useLocation();
   const hideNavbar = location.pathname.toLowerCase().startsWith('/admin') ||
   location.pathname.toLowerCase() === '/signup' ||
-  location.pathname.toLowerCase() === '/signin';
+  location.pathname.toLowerCase() === '/signin' ||
+  location.pathname.toLowerCase() === '/myaccount';
 
   return (
 
@@ -65,7 +66,6 @@ function App() {
             <AboutServices></AboutServices>  
             <Questions></Questions>
             <ContactUs></ContactUs>
-            <MyAccount></MyAccount>
             <Footer></Footer>
           </>
         }
@@ -77,6 +77,7 @@ function App() {
       <Route path="/Services" element={<Services />} />
       <Route path="/Services2" element={<Services2 />} />
       <Route path="/Payment" element={<Payment />} />
+      <Route path="/MyAccount" element={<MyAccount />} />
       <Route path="/admin" element={<AdminLayout />}>
           {/* <Route index element={<Navigate to="services" />} /> */}
           
